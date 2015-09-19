@@ -24,7 +24,7 @@ def process_fpath(path,inc,name):
        for i in range(0,imh):
           for j in range(0,imw):
 	     #print pix[i,j]
-	     if pix[j,i]<=115:
+	     if pix[j,i]<=130:
 		im.putpixel((j,i),0)
 	     else:
 		im.putpixel((j,i),255)
@@ -91,7 +91,7 @@ def process_fpath(path,inc,name):
        #im.show()
        im1=im.copy()
        im1=im1.resize((24,24),Image.ANTIALIAS)
-       loc=os.path.join('/home/amit/Documents/btp-master/final_test_images/',label+'/'+label+'_'+str(inc)+".jpg")
+       loc=os.path.join('/home/amit/Documents/btp-master/digit_images/',label+'/'+label+'_'+str(inc)+".jpg")
        im1.save(loc)
        inc=inc+1
     return inc

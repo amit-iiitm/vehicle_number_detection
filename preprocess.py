@@ -13,4 +13,4 @@ def get_images(path):
 		count=datasetresize.process_fpath(path+"/"+folder,count,folder[0])
 
 		
-get_images("/home/amit/Documents/btp-master/final_char_test_images")
+get_images("/home/amit/Documents/btp-master/final_train_digit_images")

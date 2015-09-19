@@ -24,7 +24,7 @@ from sklearn.grid_search import GridSearchCV #for cross validation
 
 X=[]
 Y=[]
-with open('train_images_chars.csv','r') as f1:
+with open('train_digit_images.csv','r') as f1:
 	traindatareader=csv.reader(f1,delimiter=',')
 	for line in traindatareader:
 		#line.split(',')
@@ -81,7 +81,7 @@ for score in scores:
 
 
 
-joblib.dump(clf,'train_pickle_chars.pkl')
+joblib.dump(clf,'train_pickle_digits.pkl')
 		
 
 

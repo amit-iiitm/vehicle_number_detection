@@ -64,7 +64,7 @@ def traindata(path,inp_file):
 			writer.writerow(data)
 			#writer.writerow(['\n'])
 
-traindata("/home/amit/Documents/btp-master/TEST/chars",'_test_real_images.csv')		 		 
+traindata("/home/amit/Documents/btp-master/digit_images/allinone",'train_digit_images.csv')		 		 
 
 #call the test_clf classifier with the csv file as input this function stores the output in csv format with first column as the true value of character and second column as predicted value of that character.
-test.test_clf('_test_real_images.csv','result_images.csv')
+#test.test_clf('_test_real_images.csv','result_images.csv')
